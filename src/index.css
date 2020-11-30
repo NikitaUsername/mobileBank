@@ -1,13 +1,288 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: rgba(241, 243, 249, 1) !important;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.titleBlock{
+  color: rgba(20, 20, 20, 1);
+  font-size: 18px;
+  height: 60px;
+  box-shadow: 0px 4px 8px rgba(139, 164, 187, 0.08);
 }
+
+.titleBlock__pageTitle{
+  line-height: 26px;
+  padding-top: 17px;
+  margin-top: 0;
+}
+
+.pan{
+  background-color: white;
+}
+
+.card{
+  border: 0;
+  height: 225px;
+  width: 328px;
+  margin: auto;
+  margin-top: 24px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 16px rgba(139, 164, 187, 0.12);
+  text-align: left !important;
+}
+
+.cardInfo__systemLogo{
+  margin-left: 22px;
+  margin-top: 32px;
+}
+
+.cardInfo__number{
+  position: absolute;
+  color: rgba(20, 20, 20, 1);
+  width: 217px;
+  height: 32px;
+  font-size: 22px;
+  line-height: 32px;
+  margin-left: 18px;
+  margin-top: 28px;
+  display: inline;
+}
+
+.ownerInfo{
+  font-weight: normal;
+  color: rgba(140, 154, 174, 1);
+}
+
+.ownerInfo__avatar{
+  margin-top: 29px;
+  margin-left: 22px;
+  display: inline;
+}
+
+.ownerInfo_name{
+  position: absolute;
+  margin-left: 14px;
+  margin-top: 32px;
+  margin-bottom: 0;
+  display: inline;
+  
+  height: 25px;
+  font-weight: normal !important;
+  font-size: 17px;
+  color: rgba(140, 154, 174, 1);
+  padding-top: 2px;
+  
+}
+
+.ownerInfo_validThru{
+  
+  text-transform: uppercase;
+  font-size: 8px;
+  line-height: 16px;
+  width: 45px;
+  display: inline;
+  margin-left: 209px;
+  margin-top: 24px;
+  position: absolute;
+}
+
+.ownerInfo_validDate{
+  position: absolute;
+  display: inline;
+  width: 52px;
+  height: 25px;
+  margin-left: 208px;
+  margin-top: 40px;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+
+.balance__main{
+  width: 170px;
+  height: 34px;
+  font-size: 28px;
+  margin-top: 29px;
+  margin-left: 22px;
+}
+
+.balanceDollar{
+  margin-top: 29px !important;
+  margin-right: 22px;
+  text-align: right;
+}
+.balanceDollar__yourBalance{
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+  color: #8C9AAE;
+}
+
+.balanceDollar__value{
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/*  MENU  */
+.menu{
+  position: absolute;
+  width: 100%;
+  transition: 0.5s;
+ 
+}
+
+.titleBlock__backButton{
+  margin-left: 17px;
+  margin-top: 23px;
+  height: 14px;
+}
+
+.titleBlock__pageTitle--menu{
+  margin-left: 116px;
+  margin-top: 17px;
+}
+
+.menuElement{
+  box-shadow: 0px 1px 0px  rgba(241, 243, 249, 1);
+  margin-top: 1px;
+  height: 72px;
+  width: 3;
+}
+
+.menuElement__logo{
+  margin-left: 16px;
+  height: 20px;
+  width: 32px;
+  margin-top: 26px;
+}
+.menuElement__number{
+  margin-left: 14.5px;
+  font-size: 16px;
+  line-height: 24px;
+  width: 158px;
+  height: 24px;
+  margin-top: 24px;
+}
+
+/*   History  */
+.history{
+  width: 328px;
+  height: 264px;
+  margin: auto;
+  box-shadow: 0px 0px 16px rgba(139, 164, 187, 0.12);
+  border-radius: 16px;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.historyList{
+  height: 184px;
+  overflow-y: scroll;
+}
+
+
+.history__title{
+  font-size: 17px;
+  height: 22px;
+  width: 53px;
+  margin-left: 22px;
+  padding-top: 20px;
+  margin-bottom: 18px;
+  box-sizing: content-box;
+}
+
+.nameDate__logo{
+  width: 44px;
+  height: 44px;
+  border: 1px solid #EAEEF9;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin-left: 22px;
+  margin-bottom: 18px;
+}
+
+.namedate__info{
+  display: inline-block;
+  margin-left: 17px;
+ 
+  }
+.namedate__name{
+  font-size: 16px !important;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+}
+.namedate__date{
+  height: 19px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 19px;
+  letter-spacing: 0.00636364em;
+  color: #8C9AAE;
+}
+
+.money{
+  text-align: right;
+  margin-right: 22px;
+}
+.money__cur{
+  font-size: 22px;
+  line-height: 30px;
+ 
+}
+
+.money__cur--gray{
+  color: #8C9AAE;
+  margin-right: 7px;
+}
+.money__dollar{
+  height: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.0145455em;
+  color: #8C9AAE;
+}
+
+/* CURRENCY */
+.currency{
+  margin: auto;
+  width: 328px;
+  margin-top: 40px;
+}
+
+.currencyTitle{
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.019em;
+  text-align: left;
+}
+
+.values__element{
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 8px 16px rgba(139, 164, 187, 0.12);
+  border-radius: 16px;
+  color: rgba(140, 154, 174, 1);
+}
+.values__sign{
+  margin-top: 17px;
+  font-size: 30px;
+  line-height: 38px;
+}
+.values__name{
+  margin-top: 4px;
+}
+
+
+
+
