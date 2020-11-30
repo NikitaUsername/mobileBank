@@ -7,25 +7,24 @@ body {
   overflow: hidden;
 }
 
-
-.titleBlock{
+.titleBlock {
   color: rgba(20, 20, 20, 1);
   font-size: 18px;
   height: 60px;
   box-shadow: 0px 4px 8px rgba(139, 164, 187, 0.08);
 }
 
-.titleBlock__pageTitle{
+.titleBlock__pageTitle {
   line-height: 26px;
   padding-top: 17px;
   margin-top: 0;
 }
 
-.pan{
+.pan {
   background-color: white;
 }
 
-.card{
+.card {
   border: 0;
   height: 225px;
   width: 328px;
@@ -36,12 +35,12 @@ body {
   text-align: left !important;
 }
 
-.cardInfo__systemLogo{
+.cardInfo__systemLogo {
   margin-left: 22px;
   margin-top: 32px;
 }
 
-.cardInfo__number{
+.cardInfo__number {
   position: absolute;
   color: rgba(20, 20, 20, 1);
   width: 217px;
@@ -53,34 +52,31 @@ body {
   display: inline;
 }
 
-.ownerInfo{
+.ownerInfo {
   font-weight: normal;
   color: rgba(140, 154, 174, 1);
 }
 
-.ownerInfo__avatar{
+.ownerInfo__avatar {
   margin-top: 29px;
   margin-left: 22px;
   display: inline;
 }
 
-.ownerInfo_name{
+.ownerInfo_name {
   position: absolute;
   margin-left: 14px;
   margin-top: 32px;
   margin-bottom: 0;
   display: inline;
-  
   height: 25px;
   font-weight: normal !important;
   font-size: 17px;
   color: rgba(140, 154, 174, 1);
   padding-top: 2px;
-  
 }
 
-.ownerInfo_validThru{
-  
+.ownerInfo_validThru {
   text-transform: uppercase;
   font-size: 8px;
   line-height: 16px;
@@ -91,7 +87,7 @@ body {
   position: absolute;
 }
 
-.ownerInfo_validDate{
+.ownerInfo_validDate {
   position: absolute;
   display: inline;
   width: 52px;
@@ -102,8 +98,7 @@ body {
   line-height: 25px;
 }
 
-
-.balance__main{
+.balance__main {
   width: 170px;
   height: 34px;
   font-size: 28px;
@@ -111,56 +106,58 @@ body {
   margin-left: 22px;
 }
 
-.balanceDollar{
+.balanceDollar {
   margin-top: 29px !important;
   margin-right: 22px;
   text-align: right;
 }
-.balanceDollar__yourBalance{
+
+.balanceDollar__yourBalance {
   font-weight: normal;
   font-size: 13px;
   line-height: 21px;
   color: #8C9AAE;
 }
 
-.balanceDollar__value{
+.balanceDollar__value {
   font-size: 18px;
   line-height: 26px;
 }
 
 /*  MENU  */
-.menu{
+
+.menu {
   position: absolute;
   width: 100%;
   transition: 0.5s;
- 
 }
 
-.titleBlock__backButton{
+.titleBlock__backButton {
   margin-left: 17px;
   margin-top: 23px;
   height: 14px;
 }
 
-.titleBlock__pageTitle--menu{
+.titleBlock__pageTitle--menu {
   margin-left: 116px;
   margin-top: 17px;
 }
 
-.menuElement{
-  box-shadow: 0px 1px 0px  rgba(241, 243, 249, 1);
+.menuElement {
+  box-shadow: 0px 1px 0px rgba(241, 243, 249, 1);
   margin-top: 1px;
   height: 72px;
   width: 3;
 }
 
-.menuElement__logo{
+.menuElement__logo {
   margin-left: 16px;
   height: 20px;
   width: 32px;
   margin-top: 26px;
 }
-.menuElement__number{
+
+.menuElement__number {
   margin-left: 14.5px;
   font-size: 16px;
   line-height: 24px;
@@ -170,7 +167,8 @@ body {
 }
 
 /*   History  */
-.history{
+
+.history {
   width: 328px;
   height: 264px;
   margin: auto;
@@ -180,13 +178,12 @@ body {
   margin-top: 50px;
 }
 
-.historyList{
+.historyList {
   height: 184px;
   overflow-y: scroll;
 }
 
-
-.history__title{
+.history__title {
   font-size: 17px;
   height: 22px;
   width: 53px;
@@ -196,7 +193,7 @@ body {
   box-sizing: content-box;
 }
 
-.nameDate__logo{
+.nameDate__logo {
   width: 44px;
   height: 44px;
   border: 1px solid #EAEEF9;
@@ -206,12 +203,12 @@ body {
   margin-bottom: 18px;
 }
 
-.namedate__info{
+.namedate__info {
   display: inline-block;
   margin-left: 17px;
- 
-  }
-.namedate__name{
+}
+
+.namedate__name {
   font-size: 16px !important;
   height: 24px;
   font-family: Roboto;
@@ -220,7 +217,8 @@ body {
   font-weight: normal;
   letter-spacing: -0.02em;
 }
-.namedate__date{
+
+.namedate__date {
   height: 19px;
   font-style: normal;
   font-weight: normal;
@@ -230,21 +228,22 @@ body {
   color: #8C9AAE;
 }
 
-.money{
+.money {
   text-align: right;
   margin-right: 22px;
 }
-.money__cur{
+
+.money__cur {
   font-size: 22px;
   line-height: 30px;
- 
 }
 
-.money__cur--gray{
+.money__cur--gray {
   color: #8C9AAE;
   margin-right: 7px;
 }
-.money__dollar{
+
+.money__dollar {
   height: 22px;
   font-style: normal;
   font-weight: normal;
@@ -254,35 +253,34 @@ body {
 }
 
 /* CURRENCY */
-.currency{
+
+.currency {
   margin: auto;
   width: 328px;
   margin-top: 40px;
 }
 
-.currencyTitle{
+.currencyTitle {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.019em;
   text-align: left;
 }
 
-.values__element{
+.values__element {
   width: 100px;
   height: 100px;
   box-shadow: 0px 8px 16px rgba(139, 164, 187, 0.12);
   border-radius: 16px;
   color: rgba(140, 154, 174, 1);
 }
-.values__sign{
+
+.values__sign {
   margin-top: 17px;
   font-size: 30px;
   line-height: 38px;
 }
-.values__name{
+
+.values__name {
   margin-top: 4px;
 }
-
-
-
-

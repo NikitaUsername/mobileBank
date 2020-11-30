@@ -4,15 +4,14 @@ import up from "../images/up.svg"
 import visa from "../images/visa.svg"
 import { ClipLoader } from 'react-spinners';
 
-
 export default class MenuElement extends Component {
     constructor(props) {
         super(props);
-        this.state = {logo: undefined};
+        this.state = { logo: undefined };
     }
-    componentDidMount(){
-        switch(this.props.user.type){
-            case 'mastercard': 
+    componentDidMount() {
+        switch (this.props.user.type) {
+            case 'mastercard':
                 this.setState({
                     logo: mc
                 })
@@ -28,30 +27,29 @@ export default class MenuElement extends Component {
                 })
                 break;
         }
-        
     }
-    changeActive = () =>{
+
+    changeActive = () => {
         this.props.changeActive(this.props.user.card_number);
     }
 
     render() {
-        if(this.state.logo)
-        {
+        if (this.state.logo) {
             return (
                 <div>
                     <div className="menuElement d-flex justify-content-start pan" onClick={e => this.changeActive()}>
-                            <img className="menuElement__logo" src={ this.state.logo } alt=""/>
-                            <p className="menuElement__number">
-                                {this.props.user.card_number}
-                            </p>
-                        </div>
+                        <img className="menuElement__logo" src={this.state.logo} alt="" />
+                        <p className="menuElement__number">
+                            {this.props.user.card_number}
+                        </p>
+                    </div>
                 </div>
             )
         }
-        else{
-            return(
+        else {
+            return (
                 <div>
-                    <ClipLoader/>
+                    <ClipLoader />
                 </div>
             )
         }

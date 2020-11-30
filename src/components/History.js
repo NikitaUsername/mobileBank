@@ -11,11 +11,11 @@ export default class History extends Component {
                         History
                     </div>
                     <div className="historyList">
-                        { this.props.history.map( data => (
-                            <HistoryElement  data={ data }
-                            usd={this.props.usd}
-                            cur={this.props.cur}
-                            sign={this.props.sign}
+                        {this.props.history.map(data => (
+                            <HistoryElement data={data}
+                                usd={this.props.usd}
+                                cur={this.props.cur}
+                                sign={this.props.sign}
                             />
                         ))}
                     </div>

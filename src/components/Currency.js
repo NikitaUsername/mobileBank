@@ -1,28 +1,27 @@
 import React, { Component } from 'react'
 
 export default class Currency extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             value: 1
         };
     }
-    
+
     changeValue = (val) => {
         this.setState({
             value: val
         });
         this.props.changeCurrency(val);
     }
-    
-    
+
     render() {
         var blueStyle = {
-            backgroundColor:  "rgba(0, 131, 225, 1)",
+            backgroundColor: "rgba(0, 131, 225, 1)",
             color: 'white'
         }
         var whiteStyle = {
-            backgroundColor:  'white',
+            backgroundColor: 'white',
             color: 'rgba(140, 154, 174, 1)'
         }
         return (
@@ -31,9 +30,9 @@ export default class Currency extends Component {
                     Change currency
                 </h2>
                 <div className="values d-flex justify-content-between">
-                    <div className="values__element pan" 
-                    style={this.state.value === 1 ? blueStyle : whiteStyle}
-                    onClick={this.changeValue.bind(this, 1)} >
+                    <div className="values__element pan"
+                        style={this.state.value === 1 ? blueStyle : whiteStyle}
+                        onClick={this.changeValue.bind(this, 1)} >
                         <div className='values__sign'>
                             £
                         </div>
@@ -41,9 +40,9 @@ export default class Currency extends Component {
                             GBP
                         </div>
                     </div>
-                    <div className="values__element pan" 
-                    style={this.state.value === 2 ? blueStyle : whiteStyle}
-                    onClick={this.changeValue.bind(this, 2)}>
+                    <div className="values__element pan"
+                        style={this.state.value === 2 ? blueStyle : whiteStyle}
+                        onClick={this.changeValue.bind(this, 2)}>
                         <div className='values__sign'>
                             €
                         </div>
@@ -51,9 +50,9 @@ export default class Currency extends Component {
                             EUR
                         </div>
                     </div>
-                    <div className="values__element pan" 
-                    style={this.state.value === 3 ? blueStyle : whiteStyle}
-                    onClick={this.changeValue.bind(this, 3)}>
+                    <div className="values__element pan"
+                        style={this.state.value === 3 ? blueStyle : whiteStyle}
+                        onClick={this.changeValue.bind(this, 3)}>
                         <div className='values__sign'>
                             ₽
                         </div>
